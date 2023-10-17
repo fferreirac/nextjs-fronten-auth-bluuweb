@@ -1,8 +1,11 @@
 "use client";
 import { useSession } from "next-auth/react";
+import { useState } from "react";
+
 
 const Dashboard = () => {
   const { data: session, status } = useSession();
+  const [cats, setCats] = useState([]);
 
   if (status === "loading") {
     return <p>Loading...</p>;
