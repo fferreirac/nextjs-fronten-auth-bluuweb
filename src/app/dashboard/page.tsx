@@ -28,6 +28,9 @@ const Dashboard = () => {
         <code>{JSON.stringify(session, null, 2)}</code>
       </pre>
       <button onClick={getCats} className="btn btn-primary">Get Cats</button>
+      <pre>
+        <code>{JSON.stringify(cats, null, 2)}</code>
+      </pre>
     </div>
   );
 };
